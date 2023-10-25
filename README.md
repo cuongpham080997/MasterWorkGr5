@@ -12,9 +12,9 @@ Masterwork
 
 ## AUTHOR
 
-# Son Nguyen Tan
-# Cuong Pham The
-# Trung Tinh Quang
+Son Nguyen Tan
+Cuong Pham The
+Trung Tinh Quang
 
 
 ## TECHNICAL
