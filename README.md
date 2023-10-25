@@ -12,28 +12,28 @@ Masterwork
 
 ## AUTHOR
 
-[Son Nguyen Tan]
-[Cuong Pham The]
-[Trung Tinh Quang]
+- Son Nguyen Tan
+- Cuong Pham The
+- Trung Tinh Quang
 
 
 ## TECHNICAL
 
-HTML5/CSS3.
-HTML Inspector.
-CSS guideline.
-bootstrap 5
-IDE: Visual Studio Code.
+- HTML5/CSS3.
+- HTML Inspector.
+- CSS guideline.
+- BootStrap 5
+- IDE: Visual Studio Code.
 
 ## TARGET
 
-Understand and apply knowledge of HTML5/CSS3/BootStrap5
-Using HTML Inspector & CSS guideline
+- Understand and apply knowledge of HTML5/CSS3/BootStrap5
+- Using HTML Inspector & CSS guideline
 
 ## TIMELINE
 
-Estimated time: 11 days (October 20 -> November 4)
-Timeline details:
+- Estimated time: 11 days (October 20 -> November 4)
+- Timeline details:
 
 - Day 1:
 - Day 2: 
