@@ -53,7 +53,7 @@ Masterwork
 
 - Git clone
 ~
-<>
+<https://github.com/cuongpham080997/MasterWorkGr5.git>
 ~
 - Run Visual Studio Code
 - Open project
