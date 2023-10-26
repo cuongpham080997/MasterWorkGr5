@@ -59,6 +59,11 @@ img.shadow {
     margin-bottom: 3rem !important;
 }
 }
+@media (max-width: 768px) {
+.aboutUs.mt-5, .my-5 {
+    margin-top: 3rem !important;
+}
+}
 /* section aubouUS end */
 
 
