@@ -52,10 +52,10 @@ img.shadow {
     box-shadow: var(--card-hover-box-shadow); 
 }
 @media (min-width: 768px) {
-.pr-md-5, .px-md-5 {
+.aboutUs .pr-md-5, .px-md-5 {
     padding-right: 3rem !important;
 }
-.mb-md-5, .my-md-5 {
+.aboutUs .mb-md-5, .my-md-5 {
     margin-bottom: 3rem !important;
 }
 }
