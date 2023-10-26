@@ -1,5 +1,9 @@
 /* GLOBAL */
 /** color variables */
+@import url("devCuong.css");
+@import url("devSon.css");
+@import url("devTrung.css");
+
 :root {
     --primary: #dc4f72;
     --secondary: #0d5fa8;
@@ -86,9 +90,3 @@ h4{
     box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
 }
 
-
-
-
-@import url(./devCuong.css);
-@import url(./devSon.css);
-@import url(./devTrung.css);
