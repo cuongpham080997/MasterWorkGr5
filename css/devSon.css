@@ -60,9 +60,9 @@ img.shadow {
 }
 }
 @media (max-width: 768px) {
-    .mt-5, .my-5 {
-        margin-top: 3rem !important;
-    }
+.aboutUs.mt-5, .my-5 {
+    margin-top: 3rem !important;
+}
 }
 /* section aubouUS end */
 
