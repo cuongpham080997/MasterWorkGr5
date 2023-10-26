@@ -1,0 +1,64 @@
+/* section aubouUS star */
+.aboutUs{
+    background-color: var(--light-bg-color);
+}
+.aboutUs .book-info h3 {
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--title-color);
+    font-weight: 700; 
+}
+.aboutUs .book-info p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 24.4px; 
+}
+.sub-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 5px; 
+}
+.btn-primary {
+    color: #fff !important;
+    background-color: #dc4f72 !important;
+    border-color: #dc4f72 !important; 
+}
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #d62f58 !important;
+    border-color: #cf2952 !important; 
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto; 
+}
+
+img.img-curve {
+    border-radius: var(--card-curve);
+    transition: 0.3s ease-in-out;
+}
+  
+img.img-curve:hover {
+    transform: var(--transformY);
+    transition: 0.3s ease-in-out ; 
+}
+  
+img.shadow {
+    box-shadow: var(--card-hover-box-shadow); 
+}
+@media (min-width: 768px) {
+.pr-md-5, .px-md-5 {
+    padding-right: 3rem !important;
+}
+.mb-md-5, .my-md-5 {
+    margin-bottom: 3rem !important;
+}
+}
+/* section aubouUS end */
+
+
