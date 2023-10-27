@@ -65,5 +65,38 @@ img.shadow {
 }
 }
 /* section aubouUS end */
-
-
+/* ------------------------------------------- */
+/* section count star */
+.count{
+    background: var(--light-bg-color); 
+}
+.count p.counter {
+    font-size: 50px;
+    line-height: 1;
+    color: var(--primary);
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px; 
+}
+.count .count_info h4 {
+    font-size: 16px;
+    line-height: 24.5px;
+    text-transform: capitalize;
+    color: var(--title-color);
+    font-weight: 700; 
+}
+.count .count_info {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: var(--card-curve);
+    box-shadow: var(--card-box-shadow);
+    transition: 0.3s ease;
+    border: 1px solid #eee; 
+}
+@media (min-width: 576px){
+.count .mt-sm-5, .my-sm-5 {
+    margin-top: 3rem !important;
+}
+}
+/* section count end */
