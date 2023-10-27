@@ -1,0 +1,146 @@
+/* FEATURE */
+.feature .container{
+    max-width: 1200px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+}
+
+.feature__project,.feature .accordion{
+    padding: 0 20px;
+    margin: 48px -15px 0;
+}
+
+.feature .accordion{
+    display: none;
+}
+
+
+
+.feature .title h3 {
+    color: var(--title-color);
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.feature .title p {
+    max-width: 750px;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+    margin: 1rem auto;
+}
+
+
+/*? screeen for min width>= 769px(this is a big screen) */
+.feature .nav-tabs {
+    width: 100%;
+    border: none;
+}
+
+.feature .tab-pane {
+    padding: 15px;
+    margin: 20px 0;
+}
+
+
+.feature .nav-tabs .nav-item {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    width: 33.333%;
+}
+
+.feature .nav-tabs .nav-item .nav-link {
+    border: none;
+    width: 100%;
+    color: var(--title-color);
+    background: var(--bg-color) !important;
+    border-bottom: 3px solid rgb(193, 193, 193);
+    padding: 15px
+}
+
+.feature .nav-tabs .nav-item .nav-link.active {
+    color: var(--primary) !important;
+    border-bottom-color: var(--primary) !important;
+}
+
+
+.feature .item__left,
+.feature .item__right {
+    padding: 0 10px;
+}
+
+.feature .project__item h3 {
+    color: var(--title-color);
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.feature .project__item p{
+    color: var(--text-color);
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24.5px;
+}
+
+.feature .project__item button {
+    margin-top: 16px;
+}
+
+.feature .project__item img {
+    transition: 0.3s ease-in-out;
+}
+
+.feature .project__item img:hover {
+    transform: translateY(-0.5rem);
+}
+
+/*? screeen for max width < 769px(this is a small screen) */
+
+
+
+
+
+
+
+
+
+/* CLIENTS */
+
+
+
+/* BUILD BRAND */
+
+
+
+/** RESPONSIVE */
+@media screen and (max-width:992.98px) {
+    /* FEATURE */
+    /*? screeen for min width>= 769px(this is a big screen) */
+    .feature .project__item h3 {
+        font-size: 26px;
+    }
+    
+}
+
+@media screen and (max-width:768.98px){
+
+    .feature__project{
+        display: none;
+    }
+
+    .feature .accordion{
+        display: block;
+    }
+
+    /* .feature .accordion-item{
+        border:
+    } */
+}
