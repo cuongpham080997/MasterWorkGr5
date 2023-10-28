@@ -71,12 +71,12 @@
               <span>Masterwork</span>
             </a>
           </h1>
-          <button class="navbar-toggle" type="button">
+          <button id="button" class="navbar-toggle navbar-mble" type="button">
             <i class="fa-solid fa-bars fa-2xs icon1"></i>
             <i class="fa-solid fa-xmark fa-2xs icon2"></i>
           </button>
           <div class="navbar__itm">
-            <ul class="list">
+            <ul class="list list-mble">
               <li><a href="#" id="a" title="Home">Home</a></li>
               <li><a href="#" title="About">About</a></li>
               <li><a href="#" title="Services">Services</a></li>
@@ -111,12 +111,12 @@
             <div class="button">
               <a href="#" class="btn clr-btn bkg-btn">Schedule a Demo</a>
             </div>
-            <!-- D & N -->
-            <span id="dark-mode-toggle" class="dmt">
-              <i class="bi bi-brightness-high bibi-higt"></i>
-              <i class="bi bi-moon bibi-dark" id="change"></i>
-            </span>
           </div>
+          <!-- D & N -->
+          <span id="dark-mode-toggle" class="dmt">
+            <i class="bi bi-brightness-high bibi-higt"></i>
+            <i class="bi bi-moon bibi-dark" id="change"></i>
+          </span>
         </div>
       </div>
     </header>
@@ -220,6 +220,25 @@
         document.body.classList.add("darkmode");
         localStorage.setItem("darkMode", "enabled");
       };
+      
+      const disableDarkMode = () => {
+        document.body.classList.remove("darkmode");
+        localStorage.setItem("darkMode", null);
+      };
+      
+      if (darkMode === "enabled") {
+        enableDarkMode();
+      }
+      
+      darkModeToggle.addEventListener("click", () => {
+        darkMode = localStorage.getItem("darkMode");
+        
+        if (darkMode !== "enabled") {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        }
+      });
       // const toggle = document.getElementById('change');
       // toggle.addEventListener('click', function () {
       //   this.classlist.toggle('bi-brightness-high');
@@ -228,24 +247,19 @@
       //   }else{}
       // });
 
-      const disableDarkMode = () => {
-        document.body.classList.remove("darkmode");
-        localStorage.setItem("darkMode", null);
-      };
+      const button = document.getElementById('button');
+      console.log(button)
+      button.addEventListener('click', function () {
+        this.classlist.button('fa-bars');
+        if(this.classList.button('fa-xmark')){
 
-      if (darkMode === "enabled") {
-        enableDarkMode();
-      }
-
-      darkModeToggle.addEventListener("click", () => {
-        darkMode = localStorage.getItem("darkMode");
-
-        if (darkMode !== "enabled") {
-          enableDarkMode();
-        } else {
-          disableDarkMode();
-        }
+        }else{}
       });
+
+      // c++ in js ^^
+      // for (let c = 0; c < 10; c++) {
+      //   document.write(c + "<br>");
+      // }
     </script>
   </body>
 </html>

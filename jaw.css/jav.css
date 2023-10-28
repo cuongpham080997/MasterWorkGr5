@@ -168,12 +168,74 @@ header.fttop-1 {
 
 
 @media (max-width: 1024px) {
-   .navbar__itm {
+
+   .header__navbar {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .header__navbar h1,
+   .navbar-toggle,
+   .dmt {
+      padding-top: 1.5rem;
+   }
+
+   .icon1 {
+      display: block !important;
+      align-items: center !important;
+      color: #fff;
+      line-height: 34px;
+      background-color: var(--primary);
+      border-radius: 5px;
+   }
+
+   .icon2 {
+      display: none !important;
+      align-items: center !important;
+      color: #fff;
+      line-height: 34px;
+      background-color: var(--primary);
+      border-radius: 5px;
+   }
+
+   /* #checker {
       display: none;
    }
-   .navbar-toggle {
-      margin-right: 16px;
+   #checker:checked~.navbar-toggle .icon1 {
+      display: none;
+   }
+   #checker:checked~.navbar-toggle .icon2 {
       display: block;
+   } */
+
+   .navbar-mble {
+      margin-right: 16px !important;
+      display: block !important;
+      position: absolute;
+      right: 0;
+      padding-top: 1.5rem !important;
+      width: 3em;
+      height: 1.5em;
+   }
+
+   .navbar__itm {
+      display: flex;
+      flex-direction: column;
+      padding-top:2rem;
+      background-color: var(--bg-color);
+   }
+
+   .list-mble {
+      display: block !important;
+   }
+
+   #dark-mode-toggle {
+      right: 75px !important;
+   }
+
+   /* home */
+   .title__hdr {
+      white-space:nowrap;
    }
 }
 
@@ -215,11 +277,11 @@ header.fttop-1 {
 }
 
 .navbar-toggle .icon1 {
-   display: block;
+   display: none;
 }
 
 .navbar-toggle .icon2 {
-   display: none;
+   display: block;
 }
 
 .fa-2xs {
@@ -461,7 +523,9 @@ a {
 #dark-mode-toggle {
    border: none;
    cursor: pointer;
-   line-height: 1px;
+   /* line-height: 1px; */
+   position: absolute;
+   right: 150px;
 }
 
 .bibi-higt,
@@ -497,7 +561,7 @@ a {
 
 .title__hdr {
    display: flex;
-   /* flex-wrap: wrap; IPad-MB */ 
+   /* flex-wrap: wrap; IPad-MB */
    margin-right: -15px;
    margin-left: -15px;
    align-items: center !important;
