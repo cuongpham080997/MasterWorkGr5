@@ -101,7 +101,123 @@
     transform: translateY(-0.5rem);
 }
 
+
 /* CLIENTS */
+.clients {
+    background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.77)), url(../img/b2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 35px;
+}
+
+.clients .container {
+    padding-right: 25px;
+    padding-left: 25px;
+    max-width: 1200px;
+}
+
+.clients .title {
+    max-width: 746px;
+}
+
+.clients .title h3 {
+    color: var(--title-color);
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.clients .title p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients .clients__content {
+    margin: 24px -15px 0;
+}
+
+.clients .clients__content>.pb-5 {
+    padding: 0 15px;
+}
+
+.clients .item__bg {
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 2rem;
+    grid-template-columns: auto 1fr;
+    grid-gap: 50px;
+    background-color: var(--bg-color);
+    border-radius: var(--card-curve);
+}
+
+.clients .item__bg .img-circle {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f3f6f9;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+}
+
+.clients .item__bg .img-circle img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.clients .item__bg .message {
+    position: relative;
+}
+
+.clients .item__bg .message i {
+    font-size: 30px;
+    color: var(--title-color);
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    right: 0;
+}
+
+.clients .item__bg .message p {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--title-color);
+    margin-bottom: 0;
+    font-weight: 400;
+}x
+
+.clients .item__bg .message .name p {
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+
+.clients .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 30px;
+}
+
+.clients .owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    margin: 5px 5px;
+    background: var(--bg-color);
+    display: block;
+    border: none;
+    border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: var(--primary);
+}
 
 
 
