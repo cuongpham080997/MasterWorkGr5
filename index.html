@@ -30,24 +30,23 @@
 
 </head>
 
-<body>
+<body id="myBody">
 
-     <!-- HEADER-->
-     <header>
+    <!-- HEADER-->
+    <header id="myHeader">
         <div class="container">
             <nav class="navMasterWork navbar navbar-expand-lg px-0 pt-lg-0">
                 <h1><a class="navbar-brand" href="#">
                         <span class="fa fa-handshake-o"></span> Masterwork </a></h1>
 
                 <!-- Nút button dưới để hỗ trợ reponsive khi thu nhỏ kích cỡ màn hình lại -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarInstruction" aria-controls="navbarNavDropdown" aria-expanded="false"
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMasterWork" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <i class="fa fa-bars"></i>
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
-                
-                <div class="collapse navbar-collapse" id="navbarInstruction">
+                <div class="collapse navbar-collapse" id="navbarMasterWork">
                     <ul class="navbar-nav ms-lg-auto">
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -63,7 +62,7 @@
                                 aria-expanded="false" aria-haspopup="true">
                                 Pages
                             </a>
-        
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Blog Posts</a></li>
                                 <li><a class="dropdown-item" href="#">Landing page</a></li>
@@ -76,31 +75,33 @@
                     </ul>
 
                     <div class="search-right me-lg-3">
-						<a href="#search" class="search-search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
+                        <a href="#search" class="search-search" title="search"><span class="fa fa-search"
+                                aria-hidden="true"></span></a>
 
-						<!-- search popup -->
-						<!-- <div id="search" class="pop-overlay">
-							<div class="popup">
-								<form class="search-box d-sm-flex">
-									<input type="search" placeholder="Enter Keyword" name="s" required="required" autofocus="">
-									<button type="submit" class="btn">Search</button>
-								</form>
-							<a class="close" href="#close">×</a>
-							</div>
-						</div> -->
-						<!-- /search popup -->
-					</div>
+                        <!-- search popup -->
+                        <div id="search" class="pop-overlay">
+                            <div class="popup">
+                                <form class="search-box d-sm-flex">
+                                    <input type="search" placeholder="Enter Keyword" name="s" required="required"
+                                        autofocus="">
+                                    <button type="submit" class="btn">Search</button>
+                                </form>
+                                <a class="close" href="#close">×</a>
+                            </div>
+                        </div>
+                        <!-- /search popup -->
+                    </div>
 
-                    <div class="top-quote mr-lg-3 mt-lg-0 HeaderButton">
-						<a class="btn btn-outline-primary theme-button" href="#demourl">
-						Schedule a Demo</a>					
-					</div>
+                    <div class="mr-lg-3 mt-lg-0 HeaderButton">
+                        <a class="btn btn-outline-primary theme-button" href="#demourl">
+                            Schedule a Demo</a>
+                    </div>
 
                 </div>
-                <div class="mobile-position DarkandLight">
+                <div class="DarkandLight">
                     <nav class="navigation">
                         <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
+                            <label class="theme-switch d-flex" for="checkbox">
                                 <input type="checkbox" id="checkbox">
                                 <div class="mode-container">
                                     <i class="gg-sun"></i>
@@ -580,17 +581,29 @@
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 0,
+            nav: false,
             responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    nav: false
                 },
-                576: {
-                    items: 2
+                480: {
+                    items: 1,
+                    nav: false
                 },
-                1200: {
-                    items: 2
+                667: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: false
                 }
             }
         })
@@ -604,6 +617,42 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('myHeader');
+
+            // Khi người dùng cuộn xuống một phần tử, thay đổi độ cao của header
+            if (window.scrollY > 0) {
+                if (window.innerWidth <= 991) {
+                    header.style.paddingTop = '10px';
+                    header.style.paddingBottom = '10px';
+                    header.style.height = 'auto'
+                }
+                else {
+                    header.style.height = '70px'; /* Độ cao mới của header khi cuộn */
+                }
+
+            }
+            else {
+                if (window.innerWidth <= 991) {
+                    header.style.paddingTop = '15px';
+                    header.style.paddingBottom = '15px';
+                    header.style.height = 'auto'
+                }
+                else {
+                    header.style.height = '90px';
+                }
+            }
+        });
+    </script>
+
+    <!-- Switch dark mode -->
+    <script>
+        document.getElementById("checkbox").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@
     --bg-lightgrey: #f7f7f7;
     --border-color-light: #d0d0d0;
     --bg-color: #fff;
-    --iframe-filter : grayscale(0%);
+    --iframe-filter: grayscale(0%);
     --light-bg-color: #F7F9FC;
     --card-curve: 6px;
     --card-hover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
@@ -29,25 +29,40 @@
     --card-box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
 }
 
+.dark#myBody {
+    --primary: #dc4f72;
+    --secondary: #0d5fa8;
+    --title-color: #eee;
+    --text-color: #b7b7b7;
+    --border-color: #333;
+    --bg-lightgrey: #191c1d;
+    --border-color-light: #333;
+    --bg-color: #131617;
+    --iframe-filter: grayscale(100%);
+    --light-bg-color: #191c1d;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff; 
-} 
+    background-color: #fff;
+}
 
 
 ul,
@@ -60,27 +75,48 @@ li {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /*? reset the tags automatically set up by bootstrap */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     margin-bottom: 0.5rem;
     font-weight: 500;
-    line-height: 1.2; 
-}      
-h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif; 
-}   
+    font-family: 'Nunito', sans-serif;
+}
 
 h3 {
     margin-bottom: 0;
@@ -95,14 +131,14 @@ h6 {
     margin-bottom: 5px;
 }
 
-h4{
+h4 {
     font-size: 18px;
     color: var(--primary);
     font-weight: 400;
     line-height: 1.2
 }
 
-.btn{
+.btn {
     display: inline-block;
     line-height: 52px;
     font-weight: 700;
@@ -119,13 +155,13 @@ h4{
     transition: 0.3s ease-out;
 }
 
-.btn:hover{
+.btn:hover {
     color: #fff;
     background-color: #dc4f72;
     border-color: #dc4f72;
 }
 
-.btn:focus{
+.btn:focus {
     box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
 }
 
@@ -139,11 +175,12 @@ img {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px; 
+    margin-left: -15px;
 }
