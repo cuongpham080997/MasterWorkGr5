@@ -343,7 +343,7 @@ header .search-right .pop-overlay:target {
 
 
 /* FEATURE */
-.feature{
+.feature {
     background-color: var(--bg-color);
 }
 
@@ -355,10 +355,16 @@ header .search-right .pop-overlay:target {
 .feature .accordion {
     padding: 0 20px;
     margin: 48px -15px 0;
+    --bs-accordion-bg: none;
+    border-color: rgb(193, 193, 193) !important;
 }
 
 .feature .accordion {
     display: none;
+}
+
+.feature .accordion-item .accordion-button{
+    border-color: rgb(193, 193, 193) !important;
 }
 
 
@@ -378,6 +384,7 @@ header .search-right .pop-overlay:target {
     font-weight: 400;
     margin: 1rem auto;
 }
+
 
 
 /*? screeen for min width>= 769px(this is a big screen) */
@@ -449,6 +456,10 @@ header .search-right .pop-overlay:target {
     transform: translateY(-0.5rem);
 }
 
+.feature .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
 /* CLIENTS */
 .clients {
@@ -568,10 +579,7 @@ header .search-right .pop-overlay:target {
     background-color: var(--primary);
 }
 
-.clients .accordion-item:first-of-type .accordion-button {
-    border-top-left-radius: none;
-    border-top-right-radius: none;
-}
+
 
 
 
@@ -652,6 +660,11 @@ footer .row.child .col-md-4 li a {
     line-height: 25px;
     padding: 0;
     text-transform: capitalize;
+    transition: all .5s;
+}
+
+footer .row.child .col-md-4 li a:hover{
+    color: #dc4f72;
 }
 
 footer .row.footer__top .col-lg-6.right h3 {
@@ -952,6 +965,7 @@ footer .footer__bottom .social li a:hover {
 
     .feature .accordion-item {
         border: none;
+        color: var(--bg-color);
     }
 
     .feature .accordion-item .accordion-button {
@@ -1114,12 +1128,12 @@ footer .footer__bottom .social li a:hover {
         padding-left: 15px;
     }
 
-    
 
-    
+
+
 }
 
-@media screen and (max-width:568.98px){
+@media screen and (max-width:568.98px) {
     header .navbar .DarkandLight {
         position: absolute;
         right: 46px;
