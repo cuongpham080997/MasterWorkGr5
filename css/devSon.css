@@ -2,6 +2,11 @@
 .aboutUs{
     background-color: var(--light-bg-color);
 }
+.aboutUs .container {
+    max-width: 1200px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
 .aboutUs .book-info h3 {
     font-size: 36px;
     line-height: 40px;
@@ -73,6 +78,11 @@ img.shadow {
 .count{
     background: var(--light-bg-color); 
 }
+.count .container {
+    max-width: 1200px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
 .count p.counter {
     font-size: 50px;
     line-height: 1;
@@ -119,6 +129,11 @@ img.shadow {
 }
 /* section count end */
 /* section COMMITMENT star */
+.commitment .container {
+    max-width: 1200px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
 .new-block {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg.jpg);
     background-size: cover;
@@ -182,6 +197,11 @@ img.shadow {
 /* section questions star */
 .questions{
     background-color: var(--light-bg-color);
+}
+.questions .container {
+    max-width: 1200px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 .questions .header-section {
     max-width: 750px;
