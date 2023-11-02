@@ -225,8 +225,7 @@ input[type="checkbox"] {
     z-index: 1;
     opacity: 0;
     top: 0;
-    left: 0;
-    -webkit-appearance: none; 
+    left: 0; 
 }
 .questions .menu-faq ul li i {
     position: absolute;
