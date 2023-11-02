@@ -1,3 +1,77 @@
+/* section carousel star */
+.carousel {
+    margin-top: 90px;
+}
+.carousel .content {
+    background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    padding-top: 5rem;
+}
+.carousel .content-left h3 {
+    font-size: 50px;
+    line-height: 57.5px;
+    color: var(--title-color);
+    font-weight: 700;
+}
+.carousel .content-left p {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 450px;
+}
+.carousel .content-photo img {
+    transform: rotateY(0deg);
+}
+.carousel .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.carouseli img {
+    vertical-align: middle;
+    border-style: none;
+}
+@media (max-width: 568px){
+    .carousel .content-left h3 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+@media (min-width: 576px){
+.carousel .container {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}}
+@media (min-width: 992px){
+.carousel .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carousel .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+.carousel .container {
+    max-width: 1200px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* section carousel end */
 /* section aubouUS star */
 .aboutUs{
     background-color: var(--light-bg-color);
