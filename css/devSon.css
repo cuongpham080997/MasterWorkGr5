@@ -146,6 +146,11 @@ img.shadow {
     background-color: #f8f9fa;
     border-color: #f8f9fa;
 }
+.commitment .btn-light:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5; 
+}
 @media (min-width: 768px){
 .commitment .mb-md-5 {
     margin-bottom: 3rem!important;
@@ -153,6 +158,11 @@ img.shadow {
 .commitment .mt-md-4 {
     margin-top: 1.5rem!important;
 }
+}
+@media screen and (max-width: 767px) {
+.commitment .theme-button {
+    line-height: 44px;
+    padding: 0px 20px; } 
 }
 
 /* section COMMITMENT end */
