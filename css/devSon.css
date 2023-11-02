@@ -15,6 +15,9 @@
     color: var(--text-color);
     line-height: 24.4px; 
 }
+.aboutUs .count_info p {
+    color: var(--text-color);
+}
 .sub-title {
     font-size: 16px;
     line-height: 20px;
@@ -79,6 +82,9 @@ img.shadow {
     margin-bottom: 15px;
     margin-top: 10px; 
 }
+.count p.counter-x{
+    color: var(--text-color);
+}
 .count .count_info h4 {
     font-size: 16px;
     line-height: 24.5px;
@@ -87,13 +93,14 @@ img.shadow {
     font-weight: 700; 
 }
 .count .count_info {
-    background-color: #fff;
+    background-color: var(--bg-color);
     padding: 2rem;
     border-radius: var(--card-curve);
     box-shadow: var(--card-box-shadow);
     transition: 0.3s ease;
-    border: 1px solid #eee; 
+    border: 1px solid var(--border-color-light);
 }
+
 @media (max-width: 576px){
     .count .mt-sm-5, .my-sm-5 {
         margin-top: 3rem !important;
@@ -103,6 +110,12 @@ img.shadow {
     .count .mt-lg-0 {
         margin-top: 0!important;
     }
+}
+@media (max-width: 992px){
+.count p.counter {
+    font-size: 40px;
+    line-height: 50px;
+}
 }
 /* section count end */
 /* section COMMITMENT star */
