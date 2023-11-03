@@ -242,19 +242,22 @@
         moonIcon.classList.toggle("bi-brightness-high");
         moonIcon.classList.toggle("bi-moon");
       });
-      
+
       // nav mbl
       const header = document.getElementById('header');
       const button = document.getElementById('button');
       const headerHeight = header.clientHeight;
 
+      let isOpen = false;
+
       button.onclick = function() {
-        const close = header.clientHeight === headerHeight;
-        if (close) {
+        // const close = header.clientHeight === headerHeight;
+        if (isOpen) {
           header.style.height = 'auto';
         } else {
-          header.style.height = 'null';
+          header.style.height = '65px';
         }
+        isOpen = !isOpen;
         
         const barsIcon = document.getElementById("owe");
         barsIcon.classList.toggle("fa-xmark");
