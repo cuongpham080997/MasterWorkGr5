@@ -12,7 +12,7 @@ Masterwork
 
 ## AUTHOR
 
-- Son Nguyen Tan
+- Son Nguyen Tan [Facebook](<https://www.facebook.com/Taurus.TS/>)
 - Cuong Pham The
 - Trung Tinh Quang
 
