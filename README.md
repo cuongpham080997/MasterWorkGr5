@@ -1,4 +1,4 @@
-![image](https://github.com/cuongpham080997/MasterWorkGr5/assets/67150485/ea2f23c1-dbbc-4811-b4e8-6c2709877cda)# Capstone 01
+## Capstone 01
 
 Exercise lasts October 20 -> November 11
 
