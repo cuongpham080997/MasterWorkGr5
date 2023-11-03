@@ -1,4 +1,4 @@
-# Capstone 01
+![image](https://github.com/cuongpham080997/MasterWorkGr5/assets/67150485/ea2f23c1-dbbc-4811-b4e8-6c2709877cda)# Capstone 01
 
 Exercise lasts October 20 -> November 4
 
@@ -35,7 +35,8 @@ Masterwork
 - Estimated time: 11 days (October 20 -> November 4)
 - Timeline details:
 
-- Day 1:
+- Day 1:Header
+![image](https://github.com/cuongpham080997/MasterWorkGr5/assets/67150485/9181f1d3-8601-4a5d-a44e-ceb3b4cb362e)
 - Day 2: 
 - Day 3: 
 - Day 4: 
