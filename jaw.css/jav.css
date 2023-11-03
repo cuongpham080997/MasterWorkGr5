@@ -145,7 +145,7 @@ header.fttop-1 {
    background-color: var(--bg-color);
    padding: 0px;
    transition: all 0.4s ease 0s;
-   height: 90px;
+   /* height: 90px; */
    align-items: center;
    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
@@ -169,6 +169,15 @@ header.fttop-1 {
 
 @media (max-width: 1024px) {
 
+   header.fttop-1 {
+      overflow: hidden;
+      height: 65px;
+   }
+
+   /* .fttop-1 {
+      padding: 10px 0 !important;
+   } */
+
    .header__navbar {
       display: flex;
       flex-direction: column;
@@ -177,7 +186,19 @@ header.fttop-1 {
    .header__navbar h1,
    .navbar-toggle,
    .dmt {
-      padding-top: 1.5rem;
+      padding-top: 0.7rem;
+   }
+
+   .navbar-toggle {
+      margin-top: -10px;
+   }
+
+   .container {
+      max-width: 100%;
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-right: auto;
+      margin-left: auto;
    }
 
    .icon1 {
@@ -208,6 +229,8 @@ header.fttop-1 {
       display: block;
    } */
 
+
+
    .navbar-mble {
       margin-right: 16px !important;
       display: block !important;
@@ -219,10 +242,15 @@ header.fttop-1 {
    }
 
    .navbar__itm {
+      display: none;
+   }
+
+   .navbar__itm {
       display: flex;
       flex-direction: column;
-      padding-top:2rem;
-      background-color: var(--bg-color);
+      padding-top: 2rem;
+      /* background-color: var(--bg-color); */
+      position: initial !important;
    }
 
    .list-mble {
@@ -231,11 +259,16 @@ header.fttop-1 {
 
    #dark-mode-toggle {
       right: 75px !important;
+      position: absolute;
+   }
+
+   .bibi-dark {
+      padding-top: 0 !important;
    }
 
    /* home */
    .title__hdr {
-      white-space:nowrap;
+      white-space: nowrap;
    }
 }
 
@@ -246,6 +279,9 @@ header.fttop-1 {
 
    .button {
       margin-right: 1rem !important;
+   }
+   header.fttop-1 {
+      height: 90px !important;
    }
 }
 
@@ -276,13 +312,13 @@ header.fttop-1 {
    border-radius: 0.25rem;
 }
 
-.navbar-toggle .icon1 {
+/* .navbar-toggle .icon1 {
    display: none;
 }
 
 .navbar-toggle .icon2 {
    display: block;
-}
+} */
 
 .fa-2xs {
    font-size: inherit;
@@ -293,6 +329,7 @@ header.fttop-1 {
    display: flex;
    position: relative;
    align-items: center;
+   left: 9.5rem;
 }
 
 .list {
@@ -524,7 +561,7 @@ a {
    border: none;
    cursor: pointer;
    /* line-height: 1px; */
-   position: absolute;
+   /* position: absolute; */
    right: 150px;
 }
 
@@ -541,6 +578,7 @@ a {
 .bibi-dark {
    display: inline-block;
    color: var(--text-color);
+   padding-top: 5px;
 
 }
 
