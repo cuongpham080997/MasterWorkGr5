@@ -455,6 +455,7 @@ input[type="checkbox"] {
     width: 3px;
     height: 9px;
 }
+
 .questions .menu-faq ul li input[type=checkbox]:checked ~ p {
     margin-top: 0;
     max-height: 0;
@@ -462,12 +463,18 @@ input[type="checkbox"] {
     transform: translate(0, 50%);
 }
 .questions .menu-faq ul li i:before {
-    transform: translate(2px, 0) rotate(45deg);
+    transform: translate(2px, 0) rotate(-45deg);
     transition: all 0.25s ease-in-out; 
 }
 .questions .menu-faq ul li i:after {
-    transform: translate(-2px, 0) rotate(-45deg);
+    transform: translate(-2px, 0) rotate(45deg);
     transition: all 0.25s ease-in-out; 
+}
+.questions .menu-faq ul li input[type=checkbox]:checked ~ i:before {
+     transform: translate(2px, 0) rotate(45deg); 
+}
+.questions .menu-faq ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
 }
 @media (max-width: 1200px){
 .questions .container {
