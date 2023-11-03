@@ -1019,7 +1019,7 @@ footer .footer__bottom .social li a:hover {
     .feature .accordion-button:not(.collapsed) {
         background-color: transparent;
         color: #dc4f72;
-        border-bottom: 3px solid #dc4f72;
+        border-bottom: 3px solid #dc4f72 !important;
     }
 
     .feature .accordion-button:not(.collapsed)::after {
