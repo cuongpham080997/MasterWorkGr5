@@ -1,6 +1,6 @@
 /* section carousel star */
 .carousel {
-    margin-top: 90px;
+    margin-top: 65px;
 }
 .carousel .content {
     background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
