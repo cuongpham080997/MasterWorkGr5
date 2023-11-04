@@ -125,6 +125,33 @@ header .navbar-expand-lg .navbar-nav .dropdown-menu::before {
 header .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
     padding: 0 1.5rem 0.875rem;
     color: var(--title-color);
+    transition: all .5s;
+    position: relative;
+}
+
+header .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:hover,
+header .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:focus{
+    background: none;
+    color: var(--primary);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: none;
+  }
+
+header .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item::before{
+    width: 20px;
+    position: absolute;
+    content: '';
+    background: var(--primary);
+    width: 0px;
+    height: 2px;
+    bottom: 13px;
+    transition: all .5s;
+}
+header .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:hover::before{
+    width: 20px;
 }
 
 
