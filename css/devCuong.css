@@ -124,6 +124,7 @@ header .navbar-expand-lg .navbar-nav .dropdown-menu::before {
 
 header .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
     padding: 0 1.5rem 0.875rem;
+    color: var(--title-color);
 }
 
 
@@ -1103,6 +1104,14 @@ footer .footer__bottom .social li a:hover {
     }
 }
 
+@media screen and (max-width:640px){
+    /* FOOTER */
+    footer .footer__form .subscribe button{
+        padding: 12px 10px;
+    }
+}
+
+
 @media screen and (min-width:576px) {
 
     /* BUILD BRAND */
@@ -1153,6 +1162,14 @@ footer .footer__bottom .social li a:hover {
         grid-gap: 10px;
         padding: 2rem 1rem;
     }
+}
+
+@media screen and (max-width:420px){
+    /* FOOTER */
+    footer .footer__form .subscribe input{
+        padding: 12px 8px;
+    }
+    
 }
 
 @media screen and (max-width:209.98px) {
